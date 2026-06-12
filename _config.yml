@@ -1,0 +1,23 @@
+# Site identity
+title: Manual GTA
+description: Manual del usuario de la aplicación GTA
+
+# Theme — clean, readable, good for docs
+theme: jekyll-theme-cayman
+
+# Clean URLs: /setup/ instead of /setup.html
+permalink: pretty
+
+# Plugins that make plain .md files behave as a site.
+# These are enabled by default on GitHub Pages' branch build,
+# but listing them makes the behaviour explicit and intentional.
+plugins:
+  - jekyll-relative-links      # rewrites [x](page.md) -> correct HTML URL
+  - jekyll-optional-front-matter  # .md files work without YAML front matter
+  - jekyll-readme-index        # README.md becomes the folder index page
+  - jekyll-titles-from-headings   # uses the first # heading as page title
+
+# Don't publish these into the site
+exclude:
+  - "*.ps1"
+  - README-internal.md

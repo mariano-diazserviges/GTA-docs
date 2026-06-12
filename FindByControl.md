@@ -1,10 +1,12 @@
-# Filtrado de datos
+# <img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> Manual usuario GTA - Filtrado de datos
 
 ---
 
-← [Índice](Index.md) · [Uso general](UsoGeneral.md) · [Módulos →](Modulos.md)
+← [Índice](index.md) · [Uso general](UsoGeneral.md) · [Módulos →](Modulos.md)
 
 ---
+
+<img src="./Media/FindFilter.png" alt="FindFilter"/>
 
 La cabecera de todas las ventanas tipo lista incluye el control **Filtrar por**, que permite reducir los registros mostrados aplicando una o varias condiciones simultáneas.
 
@@ -29,8 +31,8 @@ Cada fila de filtro tiene una casilla a la izquierda. Desmárcala para suspender
 
 ## Limpiar filtros
 
-- **Un filtro concreto** — pulsa el botón <img src="./images/Delete.png" alt="eliminar" height="25" width="25"/> que se encuentra a la derecha del filtro
-- **Todos los filtros a la vez** — pulsa <img src="./images/FilterDelete.png" alt="EliminarTodos" height="25" width="25"/> situado junto a la etiqueta **Filtrar por**.
+- **Un filtro concreto** — pulsa el botón <img src="./Media/Delete.png" alt="eliminar" height="25" width="25"/> que se encuentra a la derecha del filtro
+- **Todos los filtros a la vez** — pulsa <img src="./Media/FilterDelete.png" alt="EliminarTodos" height="25" width="25"/> situado junto a la etiqueta **Filtrar por**.
 
 ## Operadores disponibles
 
@@ -48,20 +50,22 @@ Los filtros activos se combinan con lógica **Y** (AND): solo se muestran los re
 
 ## Guardar y reutilizar configuraciones de filtro
 
+<img src="./Media/GestionFiltros.png" alt="eliminar"/> 
+
 El panel **Gestión filtros** (desplegable en el extremo izquierdo del control) permite guardar con un nombre el estado actual de los filtros y el tamaño / posición de las columnas, para reutilizarlo en sesiones futuras.
    > Gestión filtros no está disponible en todas las pantallas
 
 **Crear una nueva configuración:**
 
 1. Establece los filtros que quieras guardar.
-2. Despliega **Gestión filtros** y pulsa el botón <img src="./images/Add.png" alt="añadir" height="25" width="25"/>. Se crea una configuración con el nombre automático *Filtros 1*, *Filtros 2*, etc.
+2. Despliega **Gestión filtros** y pulsa el botón <img src="./Media/Add.png" alt="añadir" height="25" width="25"/>. Se crea una configuración con el nombre automático *Filtros 1*, *Filtros 2*, etc.
 3. Edita el nombre directamente en el desplegable si quieres personalizarlo y confirma con `Intro`.
 
 **Actualizar una configuración existente:**
 
 1. Selecciona la configuración en el desplegable.
 2. Modifica los filtros.
-3. Pulsa el botón <img src="./images/Save.png" alt="guardar" height="25" strech="Uniform"/>. Los cambios quedan registrados en esa configuración.
+3. Pulsa el botón <img src="./Media/Save.png" alt="guardar" height="25" strech="Uniform"/>. Los cambios quedan registrados en esa configuración.
 
 **Cargar una configuración:**
 
@@ -73,4 +77,4 @@ Selecciónala en el desplegable y pulsa el botón de papelera. La vista predeter
 
 ---
 
-← [Índice](Index.md) · [Uso general](UsoGeneral.md) · [Módulos →](Modulos.md)
+← [Índice](index.md) · [Uso general](UsoGeneral.md) · [Módulos →](Modulos.md)

@@ -1,4 +1,4 @@
-# Manual de usuario — Visión general
+# <img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> Manual usuario GTA - Visión general
 
 ---
 

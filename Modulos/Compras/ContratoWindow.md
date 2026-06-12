@@ -1,4 +1,4 @@
-# Ficha de Contrato de Compras
+# <img src="../../Media/LogoGTA.png" alt="HorasParte" height="30"> Manual usuario GTA - Ficha de Contrato de Compras
 
 La **Ficha de Contrato** es la ventana central de la gestión de la contratación de compras. Permite registrar y mantener todos los datos de una contratación, sus anexos, hitos, planificación económica, condiciones de pago y la documentación asociada.
 

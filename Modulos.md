@@ -1,4 +1,4 @@
-# Módulos de la aplicación
+# <img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> Manual usuario GTA -  Módulos de la aplicación
 
 ---
 
@@ -10,7 +10,7 @@ A continuación se describe brevemente cada área funcional. Los capítulos sigu
 
 ## Horas y recursos
 
-Desde esta pestaña los recursos registran sus <img src=".\Images\HorasParte.png" alt="HorasParte" height="25"> [**partes de horas**](.\Modulos\HorasParteWindowManager.md) mensuales: imputación de horas a proyectos y tareas. También se mantienen los datos de los titulares asociados a los recursos y los calendarios laborales.
+Desde esta pestaña los recursos registran sus <img src="./Media/HorasParte.png" alt="HorasParte" height="25"> [**partes de horas**](Modulos/HorasParteWindowManager.md) mensuales: imputación de horas a proyectos y tareas. También se mantienen los datos de los titulares asociados a los recursos y los calendarios laborales.
 
 ## Elementos
 
@@ -30,9 +30,9 @@ Los **proyectos** de la organización. Cada referencia agrupa tareas, horas impu
 
 | **Funcionalidad** | **Descripción** |
 | --- | --- |
-| Referencias | Lista de referencias importadas de Navision |
-| Referencia en ejecución | Gestión de la referencia por una empresa |
-| [Compras](Modulos/Compras/ContratoWindow.md) | Gestión de la contratación de compras de la referencia |
+| <img src="./Media/LogoGTA.png" alt="HorasParte" height="15"> Referencias | Lista de referencias importadas de Navision |
+| <img src="./Media/LogoGTA.png" alt="HorasParte" height="15"> Referencia en ejecución | Gestión de la referencia por una empresa |
+| <img src="./Media/LogoGTA.png" alt="HorasParte" height="15"> [Compras](Modulos/Compras/ContratoWindow.md) | Gestión de la contratación de compras de la referencia |
 
 ## Microsoft 365
 

@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+img {
+  vertical-align: -4px;
+}
+
+.table-pestanas th:nth-child(1),
+.table-pestanas td:nth-child(1) { width: 20%; }
+
+.table-pestanas th:nth-child(2),
+.table-pestanas td:nth-child(2) { width: 80%; }

@@ -1,4 +1,4 @@
-# Parte de horas — Manual de usuario
+# <img src="../Media/LogoGTA.png" alt="HorasParte" height="30"> Manual usuario GTA - Parte de horas
 
 ---
 
@@ -14,7 +14,7 @@ La ventana **Parte de horas** permite registrar las horas trabajadas por un empl
 
 ## Cabecera
 
-![Cabecera](.\Images\HorasParte_0.png)
+<img src="./Media/HorasParte_0.png" alt="HorasParte_0">
 
 En la parte superior de la ventana se muestra la información del parte:
 
@@ -26,7 +26,7 @@ En la parte superior de la ventana se muestra la información del parte:
 
 ## Opciones de visualización
 
-![Opciones visualización](.\Images\HorasParte_1.png)
+<img src="./Media/HorasParte_1.png" alt="Opciones visualización">
 
 Son varias las opciones que se pueden utilizar para adaptar la visualización del detalle del parte:
 
@@ -71,7 +71,7 @@ Permite la visualización, bien de la descripción de la referencia o proyecto, 
 
 ## El calendario
 
-![CalendarioImg](.\images\HorasParte_2.png)
+<img src="./Media/HorasParte_2.png" alt="CalendarioImg" height="300">
 
 En el panel lateral se muestra el calendario del mes. Se puede contraer o expandir haciendo click en la banda de la izquierda.
 
@@ -86,7 +86,7 @@ Al hacer clic sobre un día:
 
 ## Navegación entre periodos
 
-![Navegacion](.\Images\HorasParte_3.png)
+<img src="./Media/HorasParte_3.png" alt="Navegacion">
 
 Los botones **←** y **→** de la cabecera permiten moverse al mes anterior o siguiente sin cerrar la ventana.
 
@@ -100,7 +100,7 @@ Los botones **←** y **→** de la cabecera permiten moverse al mes anterior o 
 
 Aunque el parte no contenga horas, se mostrarán las referencias y tareas utilizadas en el parte anterior, reduciendo así el trabajo de volver a buscarlas.
 
-1. En caso de que la referencia y tarea de proyecto donde se quieren imputar horas no aparezca, Pulsa el botón <img src="../images/New.png" alt="eliminar" height="25" width="25"/> **Nuevo** que aparece justo encima del detalle.
+1. En caso de que la referencia y tarea de proyecto donde se quieren imputar horas no aparezca, Pulsa el botón <img src="../Media/New.png" alt="eliminar" height="25" width="25"/> **Nuevo** que aparece justo encima del detalle.
 2. Seleccione o escriba la **Referencia**. Pulse `F2` o `↓` para abrir el buscador.
 3. Rellene la **Tarea proyecto** y la **Tarea horas** de la misma forma.
 4. Indique el **Día** y las **Horas**.
@@ -132,7 +132,7 @@ La casilla **Cerrado** de la cabecera bloquea o desbloquea el parte:
 
 ## Estadísticas y totales
 
-![Estadisticas](.\Images\HorasParte_4.png)
+<img src="./Media/HorasParte_4.png" alt="Estadisticas">
 
 En la parte superior derecha de la ventana se muestra el desglose de horas de la referencia, tarea de proyecto y tarea de horas imputadas en el parte y en los últimos 12 meses.
 
