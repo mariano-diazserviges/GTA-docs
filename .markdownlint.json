@@ -1,6 +1,6 @@
 {
    "MD033": {
-      "allowed_elements": ["img"]
+      "allowed_elements": ["img","div","aside","br","p","ul","li","a"]
    },
    "MD013": {
       "line_length": 1024

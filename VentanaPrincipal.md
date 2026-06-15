@@ -1,8 +1,8 @@
-# <img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> Manual usuario GTA - La ventana principal
+# <img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> La ventana principal
 
 ---
 
-← [Índice](index.md) · [Uso general →](UsoGeneral.md)
+[Índice](index.md)
 
 ---
 
@@ -33,4 +33,4 @@ Las pestañas disponibles son:
 
 ---
 
-← [Índice](index.md) · [Uso general →](UsoGeneral.md)
+← [Índice](index.md)

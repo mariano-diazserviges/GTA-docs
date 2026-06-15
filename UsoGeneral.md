@@ -1,20 +1,33 @@
-# <img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> Manual usuario GTA - Uso general de la aplicación
+# <a id="top"></a><img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> Uso general de la aplicación
 
 ---
 
-← [Índice](index.md) · [Visión general](overview.md) · [La ventana principal](VentanaPrincipal.md) · [Filtrado de datos](FindByControl.md) →
-
----
+<aside class="doc-sidebar">
+  <p>En esta página</p>
+  <ul>
+    <li><a href="#ventanas">Ventanas</a></li>
+    <li class="sub"><a href="#ventana-de-relación-lista">Ventana de relación</a></li>
+    <li class="sub"><a href="#ventana-de-detalle-ficha">Ventana de detalle</a></li>
+    <li><a href="#grupo-gestión-datos-de-la-cinta-de-opciones">Grupo Gestión datos</a></li>
+    <li><a href="#búsqueda-de-valores-en-campos">Búsqueda de valores</a></li>
+    <li><a href="#filtrado-de-datos">Filtrado de datos</a></li>
+  </ul>
+  <p>Relacionado</p>
+  <ul>
+    <li><a href="BusquedaValoresCampos.html">Búsqueda de valores en campos</a></li>
+    <li><a href="FindByControl.html">Filtrado de datos</a></li>
+  </ul>
+</aside>
 
 ## Ventanas
 
 Aunque GTA tiene muchas pantallas, casi todas siguen el mismo esquema de dos pasos.
 
-### Ventana de relación (lista)
+### Ventana lista de datos
 
-Desde la cinta se abre una **ventana de relación**, que muestra una tabla con todos los registros del tipo seleccionado. Esta ventana permite:
+Desde la cinta se abre una **ventana lista de datos**, que muestra una tabla con todos los registros del tipo seleccionado. Esta ventana permite:
 
-- **Filtrar y buscar** con el control de búsqueda de la cabecera. Puedes combinar varios campos a la vez y guardar tus filtros para reutilizarlos en futuras sesiones.
+- **Filtrar y buscar** con el control [filtrado de datos](#filtrado-de-datos) de la cabecera puedes combinar varios campos a la vez y guardar tus filtros para reutilizarlos en futuras sesiones.
 - **Ordenar** pulsando en la cabecera de cualquier columna.
 - **Seleccionar** uno o varios registros para operar sobre ellos (abrir, imprimir, exportar, etc.).
 - **Editar** o **eliminar** los datos mostrados, o **añadir** nuevas filas.
@@ -42,6 +55,8 @@ Al hacer doble clic en una fila, o pulsar el botón correspondiente de la cinta 
 
 La mayoría de ventanas incluyen en la cinta de opciones el grupo **Gestión datos**, que agrupa los botones de gestión de registros. Los botones visibles en cada momento dependen del tipo de ventana, del modo activo y de los permisos del usuario.
 
+<div class="table-gestion-datos" markdown="1">
+
 | Botón | Descripción |
 | --- | --- |
 | <img src="./Media/New.png" alt="Nueva fila" height="20"/> **Nueva fila** | Añade una nueva fila directamente al final de la tabla de la ventana de relación. |
@@ -53,22 +68,18 @@ La mayoría de ventanas incluyen en la cinta de opciones el grupo **Gestión dat
 | <img src="./Media/Anotacion.png" alt="Anotacion" height="20"/> **Anotaciones** | Abre la ventana de anotaciones del registro activo: notas internas, comunicaciones, seguimiento, etc. |
 | <img src="./Media/Select.png" alt="Seleccionar" height="20"/> **Seleccionar** | Visible únicamente cuando una ventana se abre en **modo búsqueda** (al pulsar `F4` o `Alt`+`↓` desde un campo de búsqueda). Confirma la selección del registro activo y cierra la ventana de búsqueda. |
 
+</div>
+
 ---
 
 ## Búsqueda de valores en campos
 
-<img src="./Media/F4-Buscar.png" alt="F4-Buscar"/>
-
-Cuando un campo requiere elegir un valor de una tabla (un tercero, un proyecto, un tipo de documento…), el campo actúa como buscador:
-
-1. Escribe parte del código o la descripción y pulsa `Tab`.
-2. Alternativamente, pulsa `Alt`+`↓` o `F4` para abrir directamente ventana de búsqueda. Los datos quedarán filtrados de acuerdo con el texto introducido.
-3. Selecciona el valor de la lista y confirma con `Intro` o el botón <img src="./Media/Select.png" alt="Seleccionar" height="25" width="25"/> `Seleccionar` que aparecerá en la cinta de opciones.
+Consulta [Búsqueda de valores en campos](BusquedaValoresCampos.md) para una descripción de cómo funcionan los campos de búsqueda.
 
 ## Filtrado de datos
 
-Consulta [Filtrado de datos](FindByControl.md) para una descripción detallada del control de filtros.
+Consulta [Filtrado de datos](FindByControl.md) para una descripción detallada del control de filtros en las pantallas de relación o listas de datos.
 
 ---
 
-← [Índice](index.md) · [Visión general](overview.md) · [La ventana principal](VentanaPrincipal.md) · [Filtrado de datos](FindByControl.md) →
+[Arriba](#top)

@@ -1,14 +1,25 @@
-# <img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> Manual usuario GTA - Visión general
+# <img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> Visión general
 
 ---
 
-← [Índice](index.md)
-
----
+<aside class="doc-sidebar">
+  <p>En esta página</p>
+  <ul>
+    <li><a href="#qué-es-gta">¿Qué es GTA?</a></li>
+    <li><a href="#acceso-a-la-aplicación">Acceso a la aplicación</a></li>
+    <li><a href="#la-ventana-principal">La ventana principal</a></li>
+    <li><a href="#cómo-funciona-la-aplicación-uso-general">Uso general</a></li>
+    <li><a href="#módulos-de-la-aplicación">Módulos</a></li>
+  </ul>
+  <p>Relacionado</p>
+  <ul>
+    <li><a href="index.html">Índice</a></li>
+  </ul>
+</aside>
 
 ## ¿Qué es GTA?
 
-GTA (Gestión Total Administración) es la aplicación de escritorio con la que el equipo gestiona los procesos administrativos del día a día: registro de horas, inventario de elementos, inmobiliario, certificaciones, compras y financiero.
+GTA (Gestión Total Administración) es la aplicación de escritorio con la que los equipos de trabajo gestionan los procesos administrativos del día a día: registro de horas, inventario de elementos, inmobiliario, certificaciones, compras y financiero.
 
 La aplicación se ejecuta en Windows e integra en un único entorno varios sistemas externos:
 
@@ -24,7 +35,7 @@ La aplicación se ejecuta en Windows e integra en un único entorno varios siste
 
 ## Acceso a la aplicación
 
-Al arrancar GTA se muestra la **pantalla de inicio de sesión**. Los usuarios GTA están vinculados con una cuenta de Microsoft 365, de manera que, en el primer acceso a la aplicación se solicitará la selección de la cuenta 365. Una vez autenticado, se abre la ventana principal.
+Al arrancar GTA se muestra la **pantalla de inicio de sesión**. Los usuarios GTA están vinculados con una cuenta de Microsoft 365, de manera que, en el primer acceso a la aplicación se solicitará la selección de la cuenta 365. Una vez autentificado, se abre la ventana principal.
 
 > Si ves el mensaje *"No tiene permiso para acceder a esta función"* al intentar abrir alguna pantalla, ponte en contacto con el administrador de la aplicación. Cada módulo está protegido por roles de seguridad; solo verás las pestañas y botones a los que tengas acceso.
 
@@ -48,4 +59,4 @@ Consulta [Módulos](Modulos.md) para una descripción de cada área funcional di
 
 ---
 
-← [Índice](index.md)
+[Arriba](#qué-es-gta)

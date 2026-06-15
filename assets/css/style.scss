@@ -7,8 +7,88 @@ img {
   vertical-align: -4px;
 }
 
+.page-header {
+  padding: 1rem 0rem;
+}
+
+.project-name {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-tagline {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
+}
+
 .table-pestanas th:nth-child(1),
 .table-pestanas td:nth-child(1) { width: 20%; }
 
 .table-pestanas th:nth-child(2),
 .table-pestanas td:nth-child(2) { width: 80%; }
+
+.table-gestion-datos th:nth-child(1),
+.table-gestion-datos td:nth-child(1) { width: 30%; }
+
+.table-gestion-datos th:nth-child(2),
+.table-gestion-datos td:nth-child(2) { width: 70%; }
+
+/* sidebar shared styles */
+.doc-sidebar {
+  padding: 0.65rem 0.85rem;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.doc-sidebar p {
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #57606a;
+  margin: 0.6rem 0 0.3rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.doc-sidebar p:first-child { margin-top: 0; }
+
+.doc-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.3rem 0;
+}
+
+.doc-sidebar li { padding: 0.15rem 0; }
+
+.doc-sidebar li.sub {
+  padding-left: 0.65rem;
+  font-size: 0.78rem;
+}
+
+.doc-sidebar a { color: #0550ae; text-decoration: none; }
+
+.doc-sidebar a:hover { text-decoration: underline; }
+
+/* wide screens: sidebar pulled into the left gutter, content shifted right */
+@media screen and (min-width: 64em) {
+  .main-content { position: relative; }
+
+  .main-content:has(.doc-sidebar) { padding-left: 15rem; }
+
+  .doc-sidebar {
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    width: 12rem;
+  }
+}
+
+/* narrow screens: sidebar above content */
+@media screen and (max-width: 63.99em) {
+  .doc-sidebar { margin: 0 0 1.5rem 0; }
+}

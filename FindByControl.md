@@ -1,10 +1,21 @@
-# <img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> Manual usuario GTA - Filtrado de datos
+# <img src="./Media/LogoGTA.png" alt="HorasParte" height="30"> Filtrado de datos
 
 ---
 
-← [Índice](index.md) · [Uso general](UsoGeneral.md) · [Módulos →](Modulos.md)
-
----
+<aside class="doc-sidebar">
+  <p>En esta página</p>
+  <ul>
+    <li><a href="#añadir-un-filtro">Añadir un filtro</a></li>
+    <li><a href="#activar-y-desactivar-filtros-temporalmente">Activar y desactivar filtros</a></li>
+    <li><a href="#limpiar-filtros">Limpiar filtros</a></li>
+    <li><a href="#operadores-disponibles">Operadores disponibles</a></li>
+    <li><a href="#guardar-y-reutilizar-configuraciones-de-filtro">Guardar configuraciones</a></li>
+  </ul>
+  <p>Relacionado</p>
+  <ul>
+    <li><a href="UsoGeneral.html">Uso general</a></li>
+  </ul>
+</aside>
 
 <img src="./Media/FindFilter.png" alt="FindFilter"/>
 
@@ -50,7 +61,7 @@ Los filtros activos se combinan con lógica **Y** (AND): solo se muestran los re
 
 ## Guardar y reutilizar configuraciones de filtro
 
-<img src="./Media/GestionFiltros.png" alt="eliminar"/> 
+<img src="./Media/GestionFiltros.png" alt="eliminar"/>
 
 El panel **Gestión filtros** (desplegable en el extremo izquierdo del control) permite guardar con un nombre el estado actual de los filtros y el tamaño / posición de las columnas, para reutilizarlo en sesiones futuras.
    > Gestión filtros no está disponible en todas las pantallas
