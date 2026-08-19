@@ -74,17 +74,29 @@ img {
 
 .doc-sidebar a:hover { text-decoration: underline; }
 
-/* wide screens: sidebar pulled into the left gutter, content shifted right */
+/* wide screens: sidebar in its own column, content in the other; sidebar stays
+   in place while the content column scrolls past it */
 @media screen and (min-width: 64em) {
-  .main-content { position: relative; }
+  .main-content:has(.doc-sidebar) {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    column-gap: 2rem;
+  }
 
-  .main-content:has(.doc-sidebar) { padding-left: 15rem; }
+  .main-content:has(.doc-sidebar) > :not(.doc-sidebar) {
+    grid-column: 2;
+  }
 
   .doc-sidebar {
-    position: absolute;
-    left: 1rem;
+    grid-column: 1;
+    /* "span 999" (not "1 / -1"): -1 resolves against the explicit grid, which
+       has no rows defined, so it would collapse to row 1 and stretch it to
+       the sidebar's height. A large span lets it reach across however many
+       implicit rows the page's content actually creates. */
+    grid-row: 1 / span 999;
+    align-self: start;
+    position: sticky;
     top: 1.5rem;
-    width: 12rem;
   }
 }
 

@@ -26,3 +26,11 @@ defaults:
 exclude:
   - "*.ps1"
   - README-internal.md
+
+# Silence the Dart Sass "@import rules are deprecated" warning. Both our own
+# style.scss and the upstream jekyll-theme-cayman gem still use @import;
+# fixing the gem isn't up to us, so quiet_deps hides warnings coming from it,
+# and silence_deprecations covers the @import line in our own file too.
+sass:
+  quiet_deps: true
+  silence_deprecations: ["import"]

@@ -88,4 +88,4 @@ Selecciónala en el desplegable y pulsa el botón de papelera. La vista predeter
 
 ---
 
-← [Índice](index.md) · [Uso general](UsoGeneral.md) · [Módulos →](Modulos.md)
+← [Índice](index.html) · [Uso general](UsoGeneral.html) · [Módulos →](Modulos.html)

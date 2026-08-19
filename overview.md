@@ -43,19 +43,19 @@ Al arrancar GTA se muestra la **pantalla de inicio de sesión**. Los usuarios GT
 
 ## La ventana principal
 
-Consulta [Ventana principal](VentanaPrincipal.md) para ver la descripción de la cinta de opciones y las pestañas disponibles.
+Consulta [Ventana principal](VentanaPrincipal.html) para ver la descripción de la cinta de opciones y las pestañas disponibles.
 
 ---
 
 ## Cómo funciona la aplicación: Uso general
 
-Consulta [Uso general de la aplicación](UsoGeneral.md) para una descripción detallada del esquema de uso común a todas las pantallas de GTA: ventana de relación, ventana de detalle, búsqueda de valores y filtrado de datos.
+Consulta [Uso general de la aplicación](UsoGeneral.html) para una descripción detallada del esquema de uso común a todas las pantallas de GTA: ventana de relación, ventana de detalle, búsqueda de valores y filtrado de datos.
 
 ---
 
 ## Módulos de la aplicación
 
-Consulta [Módulos](Modulos.md) para una descripción de cada área funcional disponible en la cinta de opciones.
+Consulta [Módulos](Modulos.html) para una descripción de cada área funcional disponible en la cinta de opciones.
 
 ---
 

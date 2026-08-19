@@ -2,7 +2,7 @@
 
 ---
 
-[Índice](index.md)
+[Índice](index.html)
 
 ---
 
@@ -33,4 +33,4 @@ Las pestañas disponibles son:
 
 ---
 
-← [Índice](index.md)
+← [Índice](index.html)

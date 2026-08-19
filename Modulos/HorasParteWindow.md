@@ -19,7 +19,7 @@
   <ul>
     <li><a href="../Modulos.html">Módulos</a></li>
     <li><a href="../UsoGeneral.html">Uso general</a></li>
-    <li><a href="../FindByControl.html">Filtrado de datos</a></li>
+    <li><a href="../BusquedaValoresCampos.html">Búsqueda valores</a></li>
   </ul>
 </aside>
 
@@ -128,7 +128,7 @@ Los botones **←** y **→** de la cabecera permiten moverse al mes anterior o 
 Aunque el parte no contenga horas, se mostrarán las referencias y tareas utilizadas en el parte anterior, eliminando así el trabajo de volver a buscarlas.
 
 1. En caso de que la referencia y tarea de proyecto donde se quieren imputar horas no aparezca, pulsa el botón <img src="../Media/New.png" alt="eliminar" height="25" width="25"/> **Nuevo** que aparece justo encima del detalle.
-2. Selecciona o escribe la **Referencia**. Pulsa `<F2>` o  `<alt>`+`↓` para abrir el buscador.
+2. Selecciona o escribe la **Referencia**. Pulsa `<F2>` o  `<alt>`+`↓` para abrir el buscador (ver <a href="../BusquedaValoresCampos.html">Búsqueda valores</a>).
 3. Rellena la **Tarea proyecto** y la **Tarea horas** de la misma forma.
 4. Indica el **Día** y las **Horas**.
 5. Confirma la línea con `Intro` o desplazándose a otra fila.

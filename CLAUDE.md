@@ -7,6 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Jekyll-based user documentation site for **GTA (Gestión Total Administración)**, a Windows desktop application for administrative process management. Documentation is written in Spanish and published via GitHub Pages.
 
 # Claude instructions
+
 - This repository is the GTA application user manual
 - GTA application source code is available as an additional directory
 - Documentation is written in Markdown and published via GitHub Pages
@@ -58,7 +59,7 @@ Modulos/Media/        ← Module-specific screenshots
 
 **Navigation breadcrumbs** — every page ends with a breadcrumb line like:
 ```markdown
-← [Índice](index.md) · [Uso general →](UsoGeneral.md)
+← [Índice](index.html) · [Uso general →](UsoGeneral.html)
 ```
 
 **Sidebar layout** — pages with navigational sidebars use a `<div class="doc-sidebar">` block. On screens wider than 64em, the sidebar floats to the right of main content (see SCSS).

@@ -11,11 +11,13 @@
     <li><a href="#grupo-gestión-datos-de-la-cinta-de-opciones">Grupo Gestión datos</a></li>
     <li><a href="#búsqueda-de-valores-en-campos">Búsqueda de valores</a></li>
     <li><a href="#filtrado-de-datos">Filtrado de datos</a></li>
+    <li><a href="#documentación">Documentación</a></li>
   </ul>
   <p>Relacionado</p>
   <ul>
-    <li><a href="BusquedaValoresCampos.html">Búsqueda de valores en campos</a></li>
+    <li><a href=" ">Búsqueda de valores en campos</a></li>
     <li><a href="FindByControl.html">Filtrado de datos</a></li>
+    <li><a href="Modulos/Docum/RelDocumWindow.html">Documentación (Anotaciones)</a></li>
   </ul>
 </aside>
 
@@ -65,7 +67,7 @@ La mayoría de ventanas incluyen en la cinta de opciones el grupo **Gestión dat
 | Modos **Ver / Editar lista** | Cambia la tabla de la ventana de relación al modo <img src="./Media/View.png" alt="Ver" height="20"/> **Ver (solo lectura)**: los datos no son editables directamente en la tabla, o <img src="./Media/Edit.png" alt="Editar" height="20"/> **Editar (edición en línea)**: los datos se pueden modificar directamente en la celda. |
 | <img src="./Media/Delete.png" alt="Eliminar" height="20"/> **Eliminar** | Elimina el registro o fila seleccionados. Solicita confirmación antes de proceder. |
 | <img src="./Media/Refresh.png" alt="Actualizar" height="20"/> **Actualizar** | Recarga los datos desde la base de datos, reflejando los cambios más recientes. |
-| <img src="./Media/Anotacion.png" alt="Anotacion" height="20"/> **Anotaciones** | Abre la ventana de anotaciones del registro activo: notas internas, comunicaciones, seguimiento, etc. |
+| <img src="./Media/Anotacion.png" alt="Anotacion" height="20"/> [**Anotaciones**](Modulos/Docum/RelDocumWindow.html) | Abre la ventana de anotaciones del registro activo: notas internas, comunicaciones, seguimiento, avisos y documentos vinculados. |
 | <img src="./Media/Select.png" alt="Seleccionar" height="20"/> **Seleccionar** | Visible únicamente cuando una ventana se abre en **modo búsqueda** (al pulsar `F4` o `Alt`+`↓` desde un campo de búsqueda). Confirma la selección del registro activo y cierra la ventana de búsqueda. |
 
 </div>
@@ -74,11 +76,15 @@ La mayoría de ventanas incluyen en la cinta de opciones el grupo **Gestión dat
 
 ## Búsqueda de valores en campos
 
-Consulta [Búsqueda de valores en campos](BusquedaValoresCampos.md) para una descripción de cómo funcionan los campos de búsqueda.
+Consulta [Búsqueda de valores en campos](BusquedaValoresCampos.html) para una descripción de cómo funcionan los campos de búsqueda.
 
 ## Filtrado de datos
 
-Consulta [Filtrado de datos](FindByControl.md) para una descripción detallada del control de filtros en las pantallas de relación o listas de datos.
+Consulta [Filtrado de datos](FindByControl.html) para una descripción detallada del control de filtros en las pantallas de relación o listas de datos.
+
+## Documentación
+
+Consulta [Anotaciones](Modulos/Docum/RelDocumWindow.html) para el detalle de cómo funcionan las notas, avisos y documentos vinculados a los registros de la aplicación, y [Mis anotaciones](Modulos/Docum/RelDocumUsuarioWindow.html) para la bandeja personal con los avisos de todos tus registros.
 
 ---
 

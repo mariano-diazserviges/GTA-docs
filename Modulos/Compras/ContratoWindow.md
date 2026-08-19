@@ -1,23 +1,49 @@
-# <img src="../../Media/LogoGTA.png" alt="HorasParte" height="30"> Manual usuario GTA - Ficha de Contrato de Compras
+# <a id="top"></a> <img src="../../Media/LogoGTA.png" alt="HorasParte" height="30"> Ficha de Contrato de Compras
 
 La **Ficha de Contrato** es la ventana central de la gestión de la contratación de compras. Permite registrar y mantener todos los datos de una contratación, sus anexos, hitos, planificación económica, condiciones de pago y la documentación asociada.
 
-← [Módulos](../../Modulos.md) · [Índice](../../index.md)
-
 ---
+
+<aside class="doc-sidebar">
+  <p>En esta página</p>
+  <ul>
+    <li><a href="#modalidades-de-contratación">Modalidades</a></li>
+    <li><a href="#cabecera">Cabecera</a></li>
+    <li><a href="#secciones-expandibles">Secciones expandibles</a></li>
+    <li class="sub"><a href="#redacción">Redacción</a></li>
+    <li class="sub"><a href="#anexos">Anexos</a></li>
+    <li class="sub"><a href="#hitos">Hitos</a></li>
+    <li class="sub"><a href="#condiciones">Condiciones</a></li>
+    <li class="sub"><a href="#precio">Precio</a></li>
+    <li class="sub"><a href="#planificación">Planificación</a></li>
+    <li class="sub"><a href="#oficios">Oficios</a></li>
+    <li class="sub"><a href="#documentación">Documentación</a></li>
+    <li><a href="#acciones-de-la-cinta-de-opciones">Acciones de la cinta</a></li>
+    <li><a href="#validaciones-de-estado">Validaciones de estado</a></li>
+    <li><a href="#comportamientos-automáticos">Comportamientos automáticos</a></li>
+  </ul>
+  <p>Relacionado</p>
+  <ul>
+    <li><a href="../../BusquedaValoresCampos.html">Búsquedas en campos</a></li>
+    <li><a href="../../Modulos.html">Módulos</a></li>
+    <li><a href="../../UsoGeneral.html">Uso general</a></li>
+  </ul>
+</aside>
 
 ## Modalidades de contratación
 
 La contratación de compras tiene las siguientes modalidades que la clasifican de acuerdo con su nivel de obligaciones contractuales:
 
-- **Contrato**. Requiere un contrato formal con cláusulas y condiciones específicas de la compra.
-- **Contrato suministro**. Similar al anterior, la compra se refiere específicamente a un suministro de material.
-- **Presupuesto**. La contratación se realiza mediante una oferta o presupuesto aceptado con un clausulado general.
-- **Genérico**. Mediante esta modalidad, se permiten contabilizar facturas de diversos proveedores y se reducen las validaciones, permitiendo, por ejemplo, no utilizar presupuesto.
+| Modalidad | Descripción |
+| ---- | ---- |
+| **Contrato** | Requiere un contrato formal con cláusulas y condiciones específicas de la compra |
+| **Contrato suministro** | Similar al anterior, la compra se refiere específicamente a un suministro de material. Desde el punto de vista de la funcionalidad en GTA, no hay diferencia con el anterior |
+| **Presupuesto** | La contratación se realiza mediante una oferta o presupuesto aceptado con un clausulado general |
+| **Genérico** | Mediante esta modalidad, se permiten contabilizar facturas de diversos proveedores y se reducen las validaciones, permitiendo, por ejemplo, no utilizar presupuesto |
 
 ## Cabecera
 
-La parte superior de la ventana muestra los campos de identificación del contrato, visibles siempre independientemente de qué sección esté expandida.
+La parte superior de la ventana muestra los campos de identificación del contrato, siempre visibles independientemente de qué sección esté expandida.
 
 | Campo | Descripción |
 | --- | --- |
@@ -29,25 +55,18 @@ La parte superior de la ventana muestra los campos de identificación del contra
 
 ### Panel de estado (derecha de la cabecera)
 
-Muestra la progresión de estados del contrato en una tabla expandible. Cada fila representa un estado del ciclo de vida:
-
-| Columna | Descripción |
-| --- | --- |
-| **Estado** | Nombre del estado (ej. Preparación, Formalizado, En ejecución...). |
-| **Fecha** | Fecha en que se alcanzó ese estado. Se puede establecer o borrar pulsando el botón de la celda. El estado *Preparación* siempre lleva fecha. |
-| **Observaciones** | Texto libre para anotar información sobre el cambio de estado. |
+Muestra la progresión de estados del contrato en una tabla expandible. Cada fila representa un estado del ciclo de vida, permitiendo establecer la fecha en que el contrato pasó a ese estado y un comentario u observación que ayude a la gestión de las firmas.
 
 #### Estados de un contrato
 
-Los estados de una ficha de contratación ayudan a gestionar la validación por las partes implicadas. Los estados son genéricos, su uso para las distintas modalidades de contratación debe ser adaptado.
+Los estados de una ficha de contratación ayudan a gestionar la validación del contrato por todas las partes implicadas. Los estados son genéricos, su uso para las distintas modalidades de contratación debe ser adaptado de acuerdo con las necesidades.
 
-- **Preparación**: Es el estado inicial, por defecto. La ficha se inicia con una descripción y la fecha de contratación, que, normalmente, determina la codificación del contrato. Es en este estado cuando se cumplimentan todos los datos del contrato.
-
-- **Redactado**: Todos los datos de la ficha se encuentran cumplimentados y el documento contrato, de haberlo, está generado y preparado para la firma.
-
-- **Firma contrata**: El documento se encuentra enviado a la contrata (o proveedor), a la espera de su firma.
-
-- **Firmado**: El documento se encuentra firmado por ambas partes, por lo que se considera totalmente validado.
+| Estado | Descripción |
+| --- | ---- |
+| **Preparación** | Es el estado inicial, por defecto. La ficha se inicia con una descripción y la fecha de contratación que, normalmente, determina la codificación del contrato de acuerdo con la configuración de la serie asginada a la numeración de contratos. Es en este estado cuando se cumplimentan todos los datos del contrato. |
+| **Redactado** | Todos los datos de la ficha se encuentran cumplimentados y el documento contrato, de haberlo, está generado y preparado para la firma. |
+| **Firma contrata** | El documento se encuentra enviado a la contrata (o proveedor), a la espera de su firma. |
+| **Firmado** | El documento se encuentra firmado por ambas partes, por lo que se considera totalmente validado. |
 
 > Al cambiar de estado se ejecutan validaciones automáticas. Si falta algún dato obligatorio, aparece una notificación con un enlace directo al campo a completar (ver sección [Validaciones de estado](#validaciones-de-estado)).
 
@@ -55,7 +74,7 @@ Los estados de una ficha de contratación ayudan a gestionar la validación por 
 
 ## Secciones expandibles
 
-La parte central de la ventana está organizada en secciones que se pueden expandir o colapsar. Cada sección recuerda su estado expandido/colapsado entre sesiones. El encabezado de cada sección colapsa muestra un resumen de los datos más relevantes.
+La parte central de la ventana está organizada en secciones que se pueden expandir o colapsar. Cada sección conserva su estado expandido/colapsado entre sesiones. Si la sección está colapsada, el encabezado muestra un resumen de los datos más relevantes de la sección.
 
 ---
 
@@ -65,13 +84,13 @@ Datos fundamentales del contrato.
 
 | Campo | Descripción |
 | --- | --- |
-| **Tipo contrato** | Clasificación del contrato (obra, suministro, servicios, anexo...). |
-| **Fecha contrato** | Fecha de firma o formalización. Campo obligatorio. |
-| **Fecha fin contrato** | Fecha prevista de finalización. No disponible en anexos. |
-| **Fecha anulación** | Fecha en que se anuló el contrato. Solo editable cuando el contrato **no** está en redacción (campo inverso al bloqueo de redacción). |
-| **Contrata** | Empresa contratista. Se selecciona mediante buscador (tecla **F4** o escribiendo parte del código). |
-| **Proveedor NAV** | Proveedor en Navision/Business Central. Solo visible en empresas con integración Navision. Se selecciona mediante buscador. |
-| **Objeto** | Descripción detallada del objeto del contrato. Campo de texto multilínea. |
+| **Tipo contrato** | *Obligatorio*. Clasificación del contrato (obra, suministro, servicios, anexo...). |
+| **Fecha contrato** | *Obligatorio*. Fecha de firma o formalización.  |
+| **Fecha fin contrato** | *Opcional*. Fecha prevista de finalización. No disponible en anexos. |
+| **Fecha anulación** | *Opcional*. Fecha en que se anuló el contrato. Solo editable cuando el contrato **no** está en redacción (campo inverso al bloqueo de redacción). |
+| **Contrata** | *Obligatorio*. Proveedor del contrato. Se selecciona mediante buscador (*ver [Búsqueda de valores en campos](../../BusquedaValoresCampos.html)*). |
+| **Proveedor NAV** | *Obligatorio*. Proveedor en Navision/Business Central a utilizar en la contabilización de facturas de compras. Se selecciona mediante buscador (*ver [Búsqueda de valores en campos](../../BusquedaValoresCampos.html)*). |
+| **Objeto** | *Opcional*. Descripción detallada del objeto del contrato. Campo de texto multilínea. |
 
 #### Apoderados
 
@@ -94,7 +113,7 @@ Muestra todos los anexos asociados al contrato padre (contratos del mismo grupo 
 
 Para navegar a un anexo concreto, selecciónalo en la tabla y pulsa el botón **Activar** — la ventana se recargará mostrando ese anexo como contrato activo.
 
-Para **crear un nuevo anexo** del contrato activo, usa el botón de la cinta de opciones **Nuevo anexo**. El sistema creará un nuevo contrato vinculado al contrato padre.
+Para **crear un nuevo anexo** del contrato activo, usa el botón <img src="../../Media/New.png" alt="New.png" height="20"> `Nuevo anexo` que se encuentra encima de la lista de anexos. El sistema creará un nuevo contrato vinculado al contrato padre.
 
 > No es posible añadir anexos a contratos anulados.
 
@@ -106,16 +125,19 @@ Los hitos son divisiones funcionales o económicas del contrato principal. Su fu
 
 | Columna | Descripción |
 | --- | --- |
-| **Código** | Identificador del hito, generado automáticamente. |
-| **Título** | Descripción del hito. |
-| **Precio contrato** | Importe asignado al hito. |
-| **Precio real** | Importe ejecutado o facturado. |
+| **Código** | *Automático*. Identificador del hito. |
+| **Título** | *Obligatorio*. Descripción del hito. |
+| **Importe hito** | *Obligatorio*. Importe asignado al hito. |
+| **Imputado hito** | *Automático*. Importe ejecutado o facturado. GTA lo calcula automáticamente a partir de las facturas contabilizadas. |
+| **Trabajos hito** | *Opcional*. Detalle informativo de los trabajos o descripción detalla del hito. El campo admite salto de línea. |
 
 El encabezado de la sección muestra el **total de hitos** y si la suma coincide con el precio del contrato principal.
 
 Cuando la suma de los hitos excede el precio del contrato, aparece un aviso de **exceso**. Si queda importe sin asignar a hitos, se indica el **pendiente de hito**.
 
-Cada fila tiene un botón para abrir los **documentos de compra** (facturas) asociados a ese hito.
+Cada fila tiene un botón <img src="../../Media/ContaDocRec.png" alt="ContaDocRec.png" height="25"> para abrir los **documentos de compra** (facturas) asociados a ese hito.
+
+Para añadir un hito, haz clic en el botón <img src="../../Media/New.png" alt="New.png" height="25"> `Nuevo` que se encuentra encima de la lista. 
 
 > Los cambios en *Fecha fin contrato* y *Fecha anulación* del contrato principal se propagan automáticamente a todos sus hitos.
 
@@ -127,14 +149,17 @@ Son los parámetros económicos y legales del contrato. Estos datos se propagan 
 
 | Campo | Descripción |
 | --- | --- |
-| **Grupo registro IVA** | Código de grupo de producto IVA en Navision. |
-| **Grupo IRPF** | Retención de IRPF aplicable. Seleccionable mediante buscador. |
-| **Método de pago** | Código de método de pago en Navision. |
-| **Términos de pago** | Código de términos de pago en Navision. |
-| **Devolución garantía** | Porcentaje o modalidad de devolución de la garantía. |
-| **% Retención** | Porcentaje de retención de garantía aplicado a cada factura. Editable solo si *Garantía aval* no está marcada y *Devolución garantía* no es la opción que la anula. |
-| **Garantía aval** | Indica si la garantía se instrumenta mediante aval bancario. Si está activa, deshabilita el campo *% Retención*. |
-| **Fecha inicio garantía** | Fecha desde la que empieza el cómputo del plazo de garantía. |
+| **Grupo registro IVA** | *Obligatorio*. Código de grupo de producto IVA en Navision. |
+| **Grupo IRPF** | *Opcional*. Retención de IRPF aplicable. Seleccionable mediante buscador. |
+| **Método de pago** | *Obligatorio*. Código de método de pago en Navision. |
+| **Términos de pago** | *Obligatorio*. Código de términos de pago en Navision. |
+| **Devolución garantía** | *Obligatorio*. Modalidad de devolución de la garantía por ejecución de los trabajos. |
+| **% Retención** | *Obligatorio*. Porcentaje de retención de garantía aplicado a cada factura. Editable solo si *Garantía aval* no está marcada y *Devolución garantía* no es la opción que la anula. |
+| **Garantía aval** | *Opcional*. Indica si la garantía se instrumenta mediante aval bancario. Si está activa, deshabilita el campo *% Retención*. |
+| **Fecha inicio garantía** | *Obligatorio*. Fecha desde la que empieza el cómputo del plazo de garantía. |
+| **Plazo garantía** | *Obligatorio*. Número de periodos que deben transcurrir para que sea exigible la devolución de la retención por garantía. |
+| **Ud. plazo garantía** | *Obligatorio*. Unidad temporal del plazo a tomar para el periodo de devoución de la retención por garantía |
+| **Observaciones** | *Opcional*. Texto libre para cualquier anotación que ayude a la gestión del contrato. |
 
 ---
 
@@ -234,7 +259,7 @@ Registro de documentos vinculados al contrato (borradores, versiones finales, an
 | **Cancelar** | Descarta los cambios en curso. |
 | **Nuevo anexo** | Crea un nuevo anexo del contrato activo. Deshabilitado si el contrato está anulado o si el usuario no tiene permisos de inserción. |
 | **Actualizar precio real** | Recalcula el precio realizado a partir de los documentos de compra vinculados. |
-| **Anotaciones** | Abre la ventana de anotaciones documentales del contrato (notas internas, comunicaciones, etc.). |
+| [**Anotaciones**](../Docum/RelDocumWindow.html) | Abre la ventana de anotaciones documentales del contrato (notas internas, comunicaciones, etc.). |
 
 ---
 
@@ -271,4 +296,4 @@ El cambio de estado se cancela hasta que todas las validaciones sean correctas.
 
 ---
 
-← [Módulos](../../Modulos.md) · [Índice](../../overview.md)
+[Arriba](#top)
