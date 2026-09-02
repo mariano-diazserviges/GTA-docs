@@ -9,7 +9,7 @@
   <ul>
     <li><a href="#cómo-se-abre">Cómo se abre</a></li>
     <li><a href="#cabecera-de-la-declaración">Cabecera de la declaración</a></li>
-    <li><a href="#traspasar-datos-desde-operaciones-vinculadas">Traspasar datos</a></li>
+    <li><a href="#Generar-resumen-desde-Operaciones-vinculadas">Generar resumen</a></li>
     <li><a href="#la-rejilla-de-personas-y-entidades-vinculadas">La rejilla de personas y entidades vinculadas</a></li>
     <li><a href="#añadir-o-editar-una-línea-manualmente">Añadir o editar una línea</a></li>
     <li><a href="#enviar-a-la-aeat">Enviar a la AEAT</a></li>
@@ -29,27 +29,29 @@
 
 ## Cómo se abre
 
+<img src="./Media/RelPerEntidVincAr164RisWindow_0.png" alt="RelPerEntidVincAr164RisWindow_0">
+
 Desde la ventana de [Operaciones vinculadas](MovVinculada232Window.html), pulsa el botón <img src="../../../Media/PerEntidVincAr164Ris.png" alt="Personas/Entidades vinculadas" height="20"> **Personas/Entidades vinculadas Art.16.4 RIS** de la cinta de opciones.
 
-> Antes de poder abrir esta ventana debe existir ya, para la misma empresa y ejercicio, una declaración del [Modelo 232](MovVinculada232Window.html). Si no existe, la aplicación avisa: *"No se puede abrir el formulario de ops. vinculadas a incluir en la declaración del I. Sociedades (Art. 16.4 RIS). Debe crearse primero el modelo 232 de declaración de operaciones vinculadas, aunque no tenga operaciones que declarar."*
->
 > Este botón solo aparece si tienes permiso de ejecución sobre esta ventana.
 
 ---
 
 ## Cabecera de la declaración
 
+<img src="./Media/RelPerEntidVincAr164RisWindow_1.png" alt="RelPerEntidVincAr164RisWindow_1">
+
 | Campo | Descripción |
 | --- | --- |
 | **Empresa** | Empresa de la declaración. Solo lectura. |
 | **Inicio ejercicio** / **Fin ejercicio** | Periodo de la declaración, heredado del Modelo 232. No es modificable desde esta ventana. |
 | **Bloqueado** | Casilla que bloquea la edición de la cabecera y de las líneas de la declaración. |
-| **NSR** | Número de Referencia Sociedades asignado a la presentación. Editable mientras no se haya enviado. |
+| **NRS** | Número de Referencia Sociedades asignado a la presentación. Editable mientras no se haya enviado. A diferencia del CSV, el NRS debe introducirse manualmente copiándolo de la declaración presentada. |
 | **CSV** | Código Seguro de Verificación devuelto por la AEAT tras la presentación. Solo lectura; el botón **...** situado junto al campo permite consultarlo en la sede electrónica una vez informado. |
 | **Fecha y hora presentación AEAT** | Fecha y hora en que se envió la declaración. Solo lectura; no se muestra hasta que la declaración se ha presentado. |
 | **Descripción error AEAT** | Mensaje de error devuelto por la AEAT, si lo hubiera. Solo lectura; solo se muestra cuando existe un error. |
 
-> Si el ejercicio de la declaración ya está cerrado, la aplicación avisa: *"El ejercicio cerrado en {fecha} está bloqueado para su edición."*
+> No es posible editar la declaración una vez bloqueada.
 
 ---
 
@@ -62,17 +64,17 @@ El botón **Generar resumen** de la cinta de opciones recalcula el contenido de 
 - Solo se incluyen los terceros cuyo importe total de operaciones vinculadas (agrupado por NIF) alcanza o supera el límite configurado (por defecto, 250.000 €).
 - Las líneas incluidas se agrupan por tercero, tipo de vinculación, tipo de operación, método de valoración e ingreso/pago.
 
-> **La generación de datos sustituye por completo el contenido actual de la rejilla**: elimina todas las líneas existentes de la declaración y las vuelve a generar desde cero. Cualquier dato introducido o corregido manualmente en una línea se perderá si se repite el traspaso.
+> **La generación de datos sustituye por completo el contenido actual de la rejilla**: Cualquier dato introducido o corregido manualmente en una línea se perderá si se repite el traspaso.
 
-El botón **Generar resumen** solo está disponible mientras el campo **NSR** esté vacío; una vez informado, hay que borrarlo para poder repetir el traspaso.
+El botón **Generar resumen** solo está disponible mientras el campo **NRS** esté vacío; una vez informado, hay que borrarlo para poder repetir el traspaso.
 
-> Antes de traspasar, la aplicación comprueba que la fecha de inicio del periodo esté establecida, que no sea posterior a la fecha de fin, que la empresa exista y que la declaración no esté bloqueada. Si alguna condición falla, no se realiza el traspaso y se muestra el motivo.
-
-Al finalizar, informa del resultado: *"No se encontraron personas vinculadas."*, *"Se generó resumen con 1 persona vinculada"* o *"Se generó resumen con {n} personas vinculadas."*
+> Al finalizar el traspaso, se mostrará un mensaje con el resultado.
 
 ---
 
 ## La rejilla de personas y entidades vinculadas
+
+<img src="./Media/RelPerEntidVincAr164RisWindow_2.png" alt="RelPerEntidVincAr164RisWindow_2">
 
 Cada fila es una persona o entidad vinculada a declarar:
 
@@ -102,8 +104,6 @@ Cada fila es una persona o entidad vinculada a declarar:
 2. Busca y selecciona el **Tercero**. La aplicación rellena automáticamente el NIF, la razón social o nombre, si no reside en España y parte del domicilio.
 3. Completa el resto de campos, en particular **Tipo de vinculación**, **Método de valoración**, **Ingreso/Pago** e **Importe operación**.
 
-> Al seleccionar un tercero por buscador, la aplicación **no** rellena automáticamente el **País**, la **Provincia** ni el **Tipo de vía**: estos tres campos hay que completarlos siempre a mano, o la línea no pasará la validación.
-
 La aplicación exige, antes de guardar una línea:
 
 - NIF informado y con formato correcto.
@@ -112,8 +112,6 @@ La aplicación exige, antes de guardar una línea:
 - Método de valoración informado.
 - Tipo de vía, nombre de la vía pública y número de casa informados.
 - Importe de la operación mayor que cero.
-
-> El aviso de que el **tipo de vinculación** es obligatorio puede aparecer aunque ese campo esté informado: en la práctica, la validación comprueba el campo **Método de valoración**. Si ves este aviso, revisa que ambos campos estén completos.
 
 ---
 
@@ -125,18 +123,18 @@ El grupo de botones de servicios AEAT de la cinta permite:
 
 - <img src="../../../Media/AeatTraspaso.png" alt="AeatTraspaso" height="20"> **Generar resumen** — recalcular la declaración (ver [Traspasar datos](#traspasar-datos-desde-operaciones-vinculadas)).
 - <img src="../../../Media/AeatEnvio.png" alt="AeatEnvío" height="20"> **Envío** — generar el fichero de presentación y enviarlo.
-- <img src="../../../Media/AeatComprobacion.png" alt="AeatComprobacion" height="20" > **Comprobación** — consultar en la AEAT el estado de una presentación ya realizada (requiere tener configurado el certificado digital en la empresa). Obtiene el CSV y la fecha de presentación. No es posible obtenere el NRS con esta opción.
+- <img src="../../../Media/AeatComprobacion.png" alt="AeatComprobacion" height="20" > **Comprobación** — consultar en la AEAT el estado de una presentación ya realizada (requiere tener configurado el certificado digital en la empresa). Obtiene el CSV y la fecha de presentación.
 
-> La **comprobación** de la declaración obtiene el CSV y la fecha y hora de presentación de la declaración en la AEAT. Si embargo, no es posible obtener el NRS por este método.
+> La **comprobación** de la declaración obtiene el CSV y la fecha y hora de presentación de la declaración en la AEAT. Si embargo, **no es posible obtener el NRS**, hay que introducirlo manualmente.
 
 Al pulsar **Envío**:
 
-1. La aplicación comprueba que la declaración tenga al menos una línea. Si no tiene ninguna, avisa: *"La empresa {empresa} no tiene datos en el periodo {fecha} a {fecha}"* y no continúa.
+1. La aplicación comprueba que la declaración tenga al menos una línea. En caso de no tener datos, el envío no se procesará.
 2. Genera el fichero de presentación (formato AEAT `.FOV`) con los datos de la cabecera y de todas las líneas de la rejilla, y lo guarda en el equipo.
 3. Marca la declaración como **emitida** y la **bloquea** automáticamente (ver [Bloqueo de la declaración](#bloqueo-de-la-declaración)).
 4. Se muestra un cuadro de diálogo pidiendo confirmación al usuario para abrir el formulario web de la declaración.
 
-> Una vez generado, _**la ruta del archivo de presentación se copia en el portapapeles**_ para facilitar su introducción en el formulario AEAT de la web.
+> Una vez generado, **la ruta del archivo de presentación se copia en el portapapeles** para facilitar su introducción en el formulario AEAT de la web.
 
 ---
 
@@ -144,7 +142,7 @@ Al pulsar **Envío**:
 
 La casilla **Bloqueado** de la cabecera impide modificar tanto la cabecera como las líneas de la declaración. Se activa automáticamente al **enviar** la declaración a la AEAT (paso 3 del envío), y también puede marcarse manualmente antes de enviar.
 
-> El botón **Traspaso** deja de estar disponible en cuanto el campo **NSR** tiene un valor, independientemente de si la declaración está bloqueada o no.
+> El botón **Traspaso** deja de estar disponible en cuanto el campo **NRS** tiene un valor, independientemente de si la declaración está bloqueada o no.
 
 ---
 
@@ -164,7 +162,6 @@ La casilla **Bloqueado** de la cabecera impide modificar tanto la cabecera como 
 | *"El importe debe ser mayor o igual a cero."* | El importe de la operación es cero o negativo (en la práctica, debe ser estrictamente mayor que cero). |
 | *"Nombre de la via publica obligatorio." / "Número de casa obligatorio." / "Tipo de vía obligatorio."* | Falta algún dato del domicilio de la línea. |
 | *"La empresa {empresa} no tiene datos en el periodo {fecha} a {fecha}"* | Se intentó enviar una declaración sin ninguna línea. |
-| *"No se encontraron personas vinculadas." / "Se generó resumen con {n} personas vinculadas."* | Resultado del traspaso de datos. |
 
 ---
 

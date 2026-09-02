@@ -29,6 +29,8 @@
 
 ## Cómo se abre
 
+<img src="./Media/RelTerceroVinculado232Window_0.png" alt="RelTerceroVinculado232Window_0">
+
 Desde la ventana de [Operaciones vinculadas](MovVinculada232Window.html), pulsa el botón <img src="../../../Media/TerceroVinculado232.png" alt="Terceros vinculados" height="20"> **Terceros vinculados** de la cinta de opciones.
 
 > Este botón solo aparece si tienes permiso de ejecución sobre esta ventana; no existe ningún otro punto de la aplicación desde el que se pueda abrir.
@@ -42,6 +44,8 @@ En la cabecera se indica el **Ejercicio** (año, 4 dígitos). La matriz muestra 
 ---
 
 ## La matriz de vinculaciones
+
+<img src="./Media/RelTerceroVinculado232Window_1.png" alt="RelTerceroVinculado232Window_1">
 
 Se genera una columna por cada **empresa** GTA asociada a Navision, que tenga vinculaciones en el ejercicio, y una fila por cada **tercero** vinculado a alguna de ellas. La columna **Tercero** (con su nombre) es la única fija, situada siempre a la izquierda, y no es editable.
 
@@ -70,7 +74,7 @@ Pulsa sobre el texto de la celda para abrir su [histórico de vinculación](#his
 
 ## Histórico de vinculación
 
-<img src="../../../Media/RelTerceroVinculado232Window_1.png" alt="Nuevo">
+<img src="./Media/RelTerceroVinculado232Window_2.png" alt="RelTerceroVinculado232Window_2">
 
 Al pulsar sobre el texto de una celda de la matriz se abre una ventana emergente con el **histórico de periodos de vinculación** entre ese tercero y esa empresa:
 
@@ -93,8 +97,11 @@ Puedes añadir, editar o eliminar periodos con los botones habituales de gestió
 ## Asociación con Navision
 
 <img src="../../../Media/GoTo.png" alt="Asociación con Navision" height="20">
+*Al situar el cursor sobre una celda de la matriz (excepto en la diagonal), aparece un botón que abre esta asociación para ese tercero y esa empresa concretos.*
 
-Antes de poder importar los movimientos de un tercero en [Operaciones vinculadas](MovVinculada232Window.html), es necesario asociarlo con su cliente o proveedor correspondiente en Navision. Al situar el cursor sobre una celda de la matriz (excepto en la diagonal), aparece un botón que abre esta asociación para ese tercero y esa empresa concretos.
+Antes de poder importar los movimientos de un tercero en [Operaciones vinculadas](MovVinculada232Window.html), es necesario asociarlo con su cliente o proveedor correspondiente en Navision.
+
+<img src="./Media/RelTerceroVinculado232Window_3.png" alt="RelTerceroVinculado232Window_3">
 
 | Campo | Descripción |
 | --- | --- |
@@ -109,10 +116,10 @@ Antes de poder importar los movimientos de un tercero en [Operaciones vinculadas
 
 Además de los botones habituales de gestión de datos, la cinta incluye:
 
-- **Eliminar asociado** — quita la asociación de la fila seleccionada.
-- **Asociar NIF** — ejecuta un proceso automático que intenta asociar los terceros mostrados (todos los pendientes, si está activada **Mostrar no asociados**, o solo el tercero activo en caso contrario) con su cliente o proveedor Navision a partir del NIF.
+- <img src="./Media/RelTerceroVinculado232Window_4.png" alt="RelTerceroVinculado232Window_4" height="50"> **Eliminar asociado** — quita la asociación de la fila seleccionada. *Solo está disponible con **Mostrar no asociados** marcado*.
+- <img src="./Media/RelTerceroVinculado232Window_5.png" alt="RelTerceroVinculado232Window_5" height="50"> **Asociar NIF** — ejecuta un proceso automático que intenta asociar los terceros mostrados (todos los pendientes, si está activada **Mostrar no asociados**, o solo el tercero activo en caso contrario) con su cliente o proveedor Navision a partir del NIF.
 
-> Al pulsar cualquiera de los botones sin haber seleccionado antes una empresa o un tercero, la aplicación avisa: *"Selecciona una empresa antes de añadir una vinculación"* / *"Selecciona un tercero antes de añadir una asociación"*. Al buscar un código Navision sin haber indicado antes el tipo de tercero, avisa: *"Selecciona el tipo de tercero para empezar a buscar."*
+> Es necesario haber seleccionado antes una empresa o un tercero para que estos botones estén operativos.
 
 ---
 
@@ -120,10 +127,10 @@ Además de los botones habituales de gestión de datos, la cinta incluye:
 
 | Aviso | Causa |
 | --- | --- |
-| *"El tercero {código}-{nombre} ya está incluido en la matriz de vinculaciones"* | Se intentó añadir un tercero que ya existe como fila de la matriz. |
-| *"Las fechas se solapan con otro periodo de vinculación: {fecha} a {fecha}"* | El periodo introducido en el histórico se solapa con otro ya existente para el mismo tercero y empresa. |
+| *"El tercero ya está incluido en la matriz de vinculaciones"* | Se intentó añadir un tercero que ya existe como fila de la matriz. |
+| *"Las fechas se solapan con otro periodo de vinculación"* | El periodo introducido en el histórico de vinculaciones se solapa con otro ya existente para el mismo tercero y empresa. |
 | *"El tipo de vinculación es obligatorio"* | Se intentó guardar un periodo de vinculación sin indicar el tipo. |
-| *"La fecha de inicio {fecha} debe ser anterior o igual a la final {fecha}"* | La fecha de inicio del periodo es posterior a su fecha de fin. |
+| *"La fecha de inicio debe ser anterior o igual a la final"* | La fecha de inicio del periodo es posterior a su fecha de fin. |
 | *"Selecciona una empresa antes de añadir una vinculación"* | Se intentó gestionar la asociación con Navision sin haber seleccionado antes una empresa. |
 | *"Selecciona un tercero antes de añadir una asociación"* | Se intentó gestionar la asociación con Navision sin haber seleccionado antes un tercero. |
 | *"Selecciona el tipo de tercero para empezar a buscar."* | Se intentó buscar un código de cliente/proveedor Navision sin indicar antes si es cliente o proveedor. |

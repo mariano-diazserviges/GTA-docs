@@ -31,6 +31,8 @@
 
 ## Cómo se abre
 
+<img src="./Media/RelModelo232Window_0.png" alt="RelModelo232Window_0">
+
 Desde la ventana de [Operaciones vinculadas](MovVinculada232Window.html), despliega el botón <img src="../../../Media/Modelo232Aeat.png" alt="Modelo 232" height="20"> **Modelo 232** de la cinta de opciones y elige **Relación Modelo 232**.
 
 > Este botón solo aparece si tienes permiso de ejecución sobre esta ventana.
@@ -105,7 +107,7 @@ Selecciona una o varias declaraciones de la lista y pulsa **Traspasar declaracio
 | Aviso | Causa |
 | --- | --- |
 | *"¿Eliminar la declaración seleccionada?" / "¿Eliminar las {n} declaraciones seleccionadas?"* | Confirmación antes de eliminar una o varias declaraciones. |
-| *"Se traspasarán las operaciones a las ({n}) declaraciones seleccionadas.\n\n¿Confirmas el traspaso masivo?"* | Confirmación antes de un traspaso masivo. |
+| *"Se traspasarán las operaciones a las ({n}) declaraciones seleccionadas. ¿Confirmas el traspaso masivo?"* | Confirmación antes de un traspaso masivo. |
 
 Para el resto de avisos (validaciones de cabecera y líneas, traspaso, envío y comprobación), consulta los [avisos habituales de la ficha](Modelo232Window.html#avisos-habituales).
 

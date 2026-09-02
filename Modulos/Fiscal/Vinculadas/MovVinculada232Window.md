@@ -33,6 +33,8 @@
 
 ## Cómo se abre
 
+<img src="./Media/MovVinculada232Window_0.png" alt="MovVinculada232Window_0">
+
 Desde la ventana principal, ve a la pestaña **Financiero** → grupo **Informes NAVISION**, y pulsa el botón de **Operaciones vinculadas**.
 
 > Esta es la única vía de acceso a la ventana: no se abre desde ninguna ficha de tercero, referencia o documento contable.
@@ -41,6 +43,8 @@ Desde la ventana principal, ve a la pestaña **Financiero** → grupo **Informes
 
 ## Cabecera
 
+<img src="./Media/MovVinculada232Window_1.png" alt="MovVinculada232Window_1">
+
 En la parte superior de la ventana se fijan la empresa y el ejercicio sobre los que se está trabajando:
 
 | Campo | Descripción |
@@ -48,7 +52,7 @@ En la parte superior de la ventana se fijan la empresa y el ejercicio sobre los 
 | **Empresa** | Empresa GTA activa. Se selecciona mediante buscador. |
 | **Ejercicio** | Año fiscal (entre 2000 y 2999). |
 | **Cifra de negocio** | Importe de la cifra de negocio de la empresa en el ejercicio, usado como referencia para calcular la obligación de declarar (ver [Marcar obligación de declarar](#marcar-obligación-de-declarar)). Editable solo si tienes permiso de edición y la declaración no está bloqueada. |
-| <img src="../../../Media/Importar.png" alt="Importar cifra de negocio" height="20"> *(botón junto a Cifra de negocio)* | Recupera automáticamente la cifra de negocio desde **Taxor**. |
+| <img src="../../../Media/Importar.png" alt="Importar cifra de negocio" height="20"> **Obtener Cifra de negocio** | Recupera automáticamente la cifra de negocio desde **Taxor**. |
 | **Mostrar sin movimientos** | Casilla visible solo en la vista «Por terceros»: muestra también los terceros vinculados que todavía no tienen movimientos importados. |
 | **Bloqueado Mov** | Casilla que bloquea la clasificación de movimientos de la declaración activa. Con la declaración bloqueada, los campos de clasificación de esta ventana pasan a ser de solo lectura. |
 
@@ -56,7 +60,7 @@ En la parte superior de la ventana se fijan la empresa y el ejercicio sobre los 
 
 ## Vistas de movimientos
 
-<img src="../../../Media/MovVinculada232Window_1.png" alt="Importar cifra de negocio">
+<img src="./Media/MovVinculada232Window_3.png" alt="Importar cifra de negocio">
 
 Un grupo de opciones en la cabecera permite alternar entre dos formas de trabajar con los movimientos:
 
@@ -68,6 +72,8 @@ La vista elegida se recuerda entre sesiones.
 ---
 
 ### Vista «Por terceros»
+
+<img src="./Media/MovVinculada232Window_2.png" alt="Importar cifra de negocio">
 
 El panel principal muestra un árbol con un nodo por cada **tercero vinculado** a la empresa y ejercicio activos:
 
@@ -99,7 +105,9 @@ Al expandir el grupo se muestra, en modo solo lectura, el detalle de los movimie
 
 ---
 
-### Vista «Movimientos»
+### Vista «Todos»
+
+<img src="./Media/MovVinculada232Window_4.png" alt="Importar cifra de negocio">
 
 Muestra en una rejilla **todos los movimientos individuales** de la empresa y ejercicio activos, con las mismas columnas descritas en el detalle de la vista anterior, editables si tienes permiso y la declaración no está bloqueada.
 
@@ -172,6 +180,8 @@ Disponible solo en la vista **Movimientos**: selecciona un movimiento y pulsa **
 
 El botón **Exportar a Excel** de la cinta genera un libro de comprobación con el detalle de operaciones vinculadas por tercero, vinculación, valoración, tipo de operación e ingreso/pago, incluyendo una columna de **comprobación** que cruza los importes declarados como ingreso con los declarados como pago para el mismo tercero y clasificación, de forma que se puedan detectar descuadres antes de generar la declaración.
 
+> Para que la comprobación sea efectiva, es necesario que existan movimientos en todas las empresas a comprobar y que estos se encuentren clasificados.
+
 ---
 
 ## Tablas y ventanas relacionadas
@@ -198,10 +208,9 @@ Desde la cinta de opciones de esta ventana se puede acceder directamente a las t
 | *"El tipo de operación es obligatorio"* | Se intentó clasificar un grupo o movimiento sin indicar el tipo de operación. |
 | *"El método de valoración es obligatorio"* | Falta el método de valoración al clasificar (ver nota en la vista «Por terceros» sobre cuándo se dispara realmente este aviso). |
 | *"No hay movimientos seleccionados para eliminar."* | Se pulsó Eliminar sin seleccionar ninguna fila. |
-| *"Se eliminará el movimiento seleccionado." / "Se eliminarán los N movimientos seleccionados."* seguido de *"¿Confirmas la eliminación?"* | Confirmación previa a eliminar movimientos. |
 | *"No se han seleccionado movimientos"* | Se pulsó Clasificar sin seleccionar ninguna fila. |
 | *"No se modificaron movimientos. Posiblemente ya tenían la clasificación seleccionada"* | La clasificación aplicada coincidía con la que ya tenían los movimientos seleccionados. |
-| *"El tercero {código}-{nombre} ya tiene movimientos. No se importaron datos"* | Se intentó importar movimientos de un tercero que ya los tenía. Hay que eliminarlos antes de reimportar. |
+| *"El tercero ya tiene movimientos. No se importaron datos"* | Se intentó importar movimientos de un tercero que ya los tenía. Hay que eliminarlos antes de reimportar. |
 | *"Para realizar la importación de movimientos, la vista debe ser 'Por terceros'"* | Se intentó importar movimientos estando en la vista Movimientos. |
 | *"No se muestran terceros. Solo se importan movimientos de los terceros que se muestran en pantalla."* | Se intentó importar sin que hubiera terceros visibles en el árbol. |
 | *"Selecciona primero un movimiento para navegar al documento NAVISION."* | Se pulsó Navegar sin seleccionar ningún movimiento. |

@@ -32,15 +32,19 @@ La **ficha del Modelo 232** es la declaración completa de una empresa y ejercic
 
 ## Cómo se abre
 
+<img src="./Media/Modelo232Window_0.png" alt="Modelo232Window_0">
+
 Puedes llegar a la ficha de tres formas:
 
-- Desde la ventana de [Operaciones vinculadas](MovVinculada232Window.html), botón <img src="../../../Media/Modelo232Aeat.png" alt="Modelo 232" height="20"> **Modelo 232** de la cinta de opciones — abre la ficha de la empresa y ejercicio activos.
+- <img src="./Media/Modelo232Window_1.png" alt="Modelo232Window_1" height="80"> Desde la ventana de [Operaciones vinculadas](MovVinculada232Window.html), botón <img src="../../../Media/Modelo232Aeat.png" alt="Modelo 232" height="20"> **Modelo 232** de la cinta de opciones — abre la ficha de declaración de la empresa y ejercicio activos.
 - Desde la [lista de declaraciones](RelModelo232Window.html), haciendo doble clic en una fila o pulsando **Editar**.
 - Desde la [lista de declaraciones](RelModelo232Window.html), pulsando **Nuevo** — abre la ficha en modo alta para crear una declaración nueva.
 
 ---
 
 ## Cabecera
+
+<img src="./Media/Modelo232Window_2.png" alt="Modelo232Window_2">
 
 | Campo | Descripción |
 | --- | --- |
@@ -146,9 +150,6 @@ Antes de traspasar, la aplicación comprueba varias condiciones y no continúa s
 
 Al cambiar el estado a **Sin datos** o **No presenta**, la aplicación pide confirmación porque la operación **elimina todos los datos de la declaración** (operaciones vinculadas, operaciones en paraísos fiscales y tenencias):
 
-> *"Establecer el estado a 'Sin datos' eliminará los datos de la declaración.
-¿Confirmas el cambio de estado?"*
-
 Otras validaciones sobre el estado:
 
 - No se puede pasar a **Presentado en AEAT** sin haber enviado antes la declaración.
@@ -167,7 +168,7 @@ Al pulsar el botón **Envío** de la cinta de opciones:
 2. La declaración pasa a estado <img src="../../../Media/EstadoDeclFiscalEM.png" alt="EstadoDeclFiscalEM" height="15"> **Emitida**.
 3. Se muestra un cuadro de diálogo para confirmar la apertura del formulario web de la AEAT para la presentación de la declaración.
 
-> Una vez generado, _**la ruta del archivo de presentación se copia en el portapapeles**_ para facilitar su introducción en el formulario AEAT de la web.
+> Una vez generado, **la ruta del archivo de presentación se copia en el portapapeles** para facilitar su introducción en el formulario AEAT de la web.
 >
 > También puedes enviar una declaración directamente desde la [lista de declaraciones](RelModelo232Window.html), _**sin necesidad de abrir su ficha**_.
 
