@@ -6,6 +6,7 @@
   <p>En esta página</p>
   <ul>
     <li><a href="#añadir-un-filtro">Añadir un filtro</a></li>
+    <li><a href="#cambiar-la-columna-de-un-filtro">Cambiar la columna</a></li>
     <li><a href="#activar-y-desactivar-filtros-temporalmente">Activar y desactivar filtros</a></li>
     <li><a href="#limpiar-filtros">Limpiar filtros</a></li>
     <li><a href="#operadores-disponibles">Operadores disponibles</a></li>
@@ -19,6 +20,12 @@
 
 <img src="./Media/FindFilter.png" alt="FindFilter"/>
 
+<video src="./Media/FindFilter.mp4" controls muted playsinline style="max-width: 100%;">
+  Tu navegador no puede reproducir el vídeo. <a href="./Media/FindFilter.mp4">Descárgalo aquí</a>.
+</video>
+
+*Ejemplo de uso del control **Filtrar por**.*
+
 La cabecera de todas las ventanas tipo lista incluye el control **Filtrar por**, que permite reducir los registros mostrados aplicando una o varias condiciones simultáneas.
 
 > Cada ventana de relación guarda sus configuraciones de forma independiente. Los filtros guardados en una ventana no afectan a otras.
@@ -27,14 +34,27 @@ La cabecera de todas las ventanas tipo lista incluye el control **Filtrar por**,
 
 ## Añadir un filtro
 
-1. Haz clic en cualquier celda de la columna por la que quieres filtrar. Aparece una nueva fila de filtro.
+El control siempre muestra al menos una fila de filtro. Cada fila tiene, de izquierda a derecha: casilla de activación, **columna**, **operador**, **valor** y botón de eliminar.
 
-    > No hagas click en la cabecera de la columna. Esto hará que los datos se ordene por esa columna.
+1. Pulsa el botón <img src="./Media/Add.png" alt="añadir filtro" height="25" width="25"/> **Añadir filtro**, situado junto a la etiqueta **Filtrar por**. Aparece una nueva fila de filtro sobre la primera columna que todavía no se está filtrando.
 
-2. Elige el **operador** en el desplegable de la fila (véase [Operadores disponibles](#operadores-disponibles)).
-3. Escribe el **valor** en el cuadro de texto. La lista se actualiza automáticamente mientras escribes, sin necesidad de pulsar ningún botón.
+    > Si la fila vacía que ya se muestra te sirve, no hace falta añadir otra: usa directamente esa fila.
+
+2. Elige la **columna** en el primer desplegable de la fila. El desplegable muestra las columnas filtrables de la lista en el mismo orden en que aparecen en pantalla. Con el desplegable seleccionado puedes escribir las primeras letras del nombre de la columna para saltar directamente a ella.
+3. Elige el **operador** en el siguiente desplegable (véase [Operadores disponibles](#operadores-disponibles)).
+4. Escribe el **valor** en el cuadro de texto. La lista se actualiza automáticamente mientras escribes, sin necesidad de pulsar ningún botón.
 
 Para el operador **Entre**, aparece un segundo cuadro de texto etiquetado **hasta** donde se introduce el límite superior del rango.
+
+> El botón **Añadir filtro** se desactiva cuando ya hay un filtro para cada columna disponible.
+
+## Cambiar la columna de un filtro
+
+Selecciona otra columna en el desplegable de columna de la fila. Como cada tipo de columna tiene sus propios operadores y formato de valor, el filtro se reinicia: el operador vuelve al predeterminado y el valor introducido se borra.
+
+No puede haber dos filtros sobre la misma columna. Si eliges una columna que ya se está filtrando en otra fila, el desplegable vuelve a la columna anterior.
+
+GTA recuerda las columnas de los filtros entre sesiones (sin sus valores): la próxima vez que abras la ventana encontrarás las mismas filas, vacías y listas para usar.
 
 ## Activar y desactivar filtros temporalmente
 
@@ -42,8 +62,8 @@ Cada fila de filtro tiene una casilla a la izquierda. Desmárcala para suspender
 
 ## Limpiar filtros
 
-- **Un filtro concreto** — pulsa el botón <img src="./Media/Delete.png" alt="eliminar" height="25" width="25"/> que se encuentra a la derecha del filtro
-- **Todos los filtros a la vez** — pulsa <img src="./Media/FilterDelete.png" alt="EliminarTodos" height="25" width="25"/> situado junto a la etiqueta **Filtrar por**.
+- **Un filtro concreto** — pulsa el botón <img src="./Media/Delete.png" alt="eliminar" height="25" width="25"/> que se encuentra a la derecha del filtro. Si es el único filtro, la fila no desaparece: se vacía y conserva su columna.
+- **Todos los filtros a la vez** — pulsa <img src="./Media/FilterDelete.png" alt="EliminarTodos" height="25" width="25"/> situado junto a la etiqueta **Filtrar por**. Se eliminan todas las filas excepto la primera, que queda vacía.
 
 ## Operadores disponibles
 
@@ -54,6 +74,9 @@ Los operadores que aparecen en el desplegable dependen del tipo de dato de la co
 | Texto | Contiene · No contiene · Igual a · Distinto de · Empieza por · No empieza por · Termina en · No termina en |
 | Numérico | Igual a · Distinto de · Mayor que · Mayor o igual que · Menor que · Menor o igual que · Entre |
 | Fecha | Igual a · Distinto de · Posterior a · Posterior o igual a · Anterior a · Anterior o igual a · Entre |
+| Lista de valores (p. ej. estados o tipos) | Contiene · Igual a · Empieza por · Distinto de · No contiene · No empieza por |
+
+En las columnas de números enteros solo se admiten dígitos.
 
 Cuando un valor de fecha o número no tiene el formato esperado, el cuadro de texto muestra un borde rojo con un aviso. El filtro no se aplica hasta que el valor sea válido.
 
